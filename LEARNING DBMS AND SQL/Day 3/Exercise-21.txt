@@ -1,0 +1,3 @@
+delete 
+from SaleDetail
+where Saleid=1004

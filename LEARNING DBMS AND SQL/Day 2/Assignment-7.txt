@@ -1,0 +1,13 @@
+CREATE TABLE Bill(
+BillNO NUMBER,
+StoreName VARCHAR2(20),
+Shopperid NUMBER,
+ArCode CHAR(5),
+Amount NUMBER,
+BillDate DATE,
+Quantity NUMBER(4) DEFAULT 1,
+CHECK(Quantity>0),
+CONSTRAINT bill_bno_pk PRIMARY KEY(BillNo),
+CONSTRAINT bill_sn_fK FOREIGN KEY(StoreName) REFERENCES Store(StoreName),
+CONSTRAINT bill_sid_fK FOREIGN KEY(ShopperId) REFERENCES Shopper(ShopperId),
+CONSTRAINT bill_acode_fK FOREIGN KEY(ArCode) REFERENCES Article(ArCode))

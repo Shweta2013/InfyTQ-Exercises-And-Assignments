@@ -1,0 +1,2 @@
+SELECT ORDERID,STATUS,NVL(PYMTMODE,'Payment yet not done') "PYMTMODE"
+FROM Orders

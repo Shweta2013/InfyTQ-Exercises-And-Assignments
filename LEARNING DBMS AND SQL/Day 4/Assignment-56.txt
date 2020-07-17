@@ -1,0 +1,3 @@
+SELECT Descr "DESCR" 
+FROM Item
+WHERE LENGTH(Descr)>15

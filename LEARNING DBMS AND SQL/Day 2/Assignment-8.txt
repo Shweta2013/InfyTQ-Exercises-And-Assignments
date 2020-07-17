@@ -1,0 +1,6 @@
+CREATE TABLE Supplier(
+Supplierid VARCHAR2(6),
+Name VARCHAR2(30),
+ContactNo VARCHAR2(15) NOT NULL,
+Emailid VARCHAR2(30),
+CONSTRAINT sup_sid_pk PRIMARY KEY(Supplierid)

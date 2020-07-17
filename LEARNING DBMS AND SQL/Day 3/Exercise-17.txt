@@ -1,0 +1,3 @@
+select prodid,pdesc,category,discount
+from Product
+where category='Apparel' and discount>5
