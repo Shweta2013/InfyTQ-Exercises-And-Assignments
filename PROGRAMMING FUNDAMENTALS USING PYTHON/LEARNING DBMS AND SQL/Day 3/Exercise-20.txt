@@ -1,0 +1,2 @@
+update Salesman set sname='Jenny',location='Bristol'
+where sid=3
